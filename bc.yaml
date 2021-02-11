@@ -1,0 +1,15 @@
+Kind: BuildConfig
+apiVersion: build.openshift.io/v1
+metadata:
+  name: "ruby-sample-build" 
+spec:
+  runPolicy: "Serial" 
+  source: 
+    git:
+      uri: "https://github.com/jtudelag/sample-build-config.git"
+  strategy: 
+    dockerStrategy:
+  output: 
+    to:
+      kind: "ImageStreamTag"
+      name: "sample-entitled:latest"
