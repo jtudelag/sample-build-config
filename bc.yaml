@@ -1,7 +1,7 @@
 Kind: BuildConfig
 apiVersion: build.openshift.io/v1
 metadata:
-  name: "ruby-sample-build" 
+  name: "sample-entitled-build"
 spec:
   runPolicy: "Serial" 
   source: 
